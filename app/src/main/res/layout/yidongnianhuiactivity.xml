@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:background="@drawable/bgbgbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/top_rl"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_height="2dp"/>
+
+            <TextView
+                android:id="@+id/t2"
+                android:textColor="@color/write"
+                android:textSize="60sp"
+                android:text="奥飞数据"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_height="2dp"/>
+            
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:id="@+id/top_r2"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/write"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:text="云计算与大数据应用基础服务提供商"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <!--弹窗-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:visibility="gone"
+        android:layout_below="@+id/recyclerView"
+        android:layout_marginEnd="2dp"
+        android:background="@color/touming22"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--弹窗-->
+
+
+
+    <Button
+        android:layout_width="30dp"
+        android:id="@+id/dddk"
+        android:background="@color/img_full_opaque"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:background="@drawable/zidonghuoqu8"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/wangluo"
+        android:visibility="gone"
+        android:text="网络已断开连接,请检查网络"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
